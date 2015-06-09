@@ -1,0 +1,30 @@
+{
+  "name": "engine-prompt21",
+  "version": "1.0.0",
+  "description": "Form module for Engine.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "components": {
+    "scripts": [
+      "client/index.js",
+      "client/libs/jquery/prompt21.js",
+      "/libs/jquery.js"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:gabipetrovay/engine-prompt21.git"
+  },
+  "keywords": [
+    "jxengine",
+    "file",
+    "system"
+  ],
+  "author": {
+    "name": "jillix",
+    "email": "contact@jillix.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/gabipetrovay/engine-prompt21"
+}
