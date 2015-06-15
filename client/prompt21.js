@@ -113,8 +113,27 @@
             });
         }
 
+        /**
+         * show
+         * Shows the popup and calls the optional callback function when visible and focused.
+         *
+         * @name show
+         * @function
+         * @param {Function} callback The callback function.
+         * @return {undefined}
+         */
+        function show (callback) {
+            $self[settings.showFunc].call($self, function () {
+                $(":input:first", $form).focus();
+                if (callback) {
+                    callback();
+                }
+            });
+        }
+
         return {
-            getData: getData
+            getData: getData,
+            show: show
         };
     };
 

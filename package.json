@@ -8,7 +8,7 @@
   "components": {
     "scripts": [
       "client/index.js",
-      "client/libs/jquery/prompt21.js",
+      "client/prompt21.js",
       "/libs/jquery.js"
     ]
   },

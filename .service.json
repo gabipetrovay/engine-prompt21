@@ -1,0 +1,11 @@
+{
+    "client": {
+        "methods": {
+            "loadForm": {},
+            "closeForm": {}
+        },
+        "emits": {
+            "form_loaded": {}
+       }
+    }
+}
