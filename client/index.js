@@ -12,6 +12,8 @@ exports.loadForm = function(ev, data) {
     }
 
     var url = location.protocol + "//" + location.host + "/!/forms/" + data.form + ".txt";
+    delete data.form;
+
     $.ajax(url, {
         success: function(text, status, xhr) {
             var $popup = $(text);

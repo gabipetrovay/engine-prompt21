@@ -26,5 +26,8 @@
     "email": "contact@jillix.com"
   },
   "license": "MIT",
-  "homepage": "https://github.com/gabipetrovay/engine-prompt21"
+  "homepage": "https://github.com/gabipetrovay/engine-prompt21",
+  "bugs": {
+    "url": "https://github.com/gabipetrovay/engine-prompt21/issues"
+  }
 }
