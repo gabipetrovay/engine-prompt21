@@ -11,8 +11,9 @@ exports.loadForm = function(ev, data) {
         return;
     }
 
-    var url = location.protocol + "//" + location.host + "/!/forms/" + data.form + ".txt";
+    var url = location.protocol + "//" + location.host + "/!/forms/" + data.form + (data.type ? "." + data.type : "") + ".txt";
     delete data.form;
+    delete data.type;
 
     $.ajax(url, {
         success: function(text, status, xhr) {
