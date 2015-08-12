@@ -2,9 +2,10 @@ var $ = require("/libs/jquery");
 require("client/prompt21");
 
 exports.init = function() {
+    self._formLoadedStream = self.flow("form_loaded");
 };
 
-exports.loadForm = function(ev, data) {
+exports.loadForm = function(data) {
     var self = this;
 
     if (!data || !data.form || !data.callback) {
@@ -22,7 +23,7 @@ exports.loadForm = function(ev, data) {
             var form = $popup.prompt21();
             form.show();
 
-            self.emit("form_loaded", { target: ".popups21 form" }, data);
+            self._formLoadedStream.write(null, { target: ".popups21 form", data: data });
         },
         error: function(xhr, status, err) {
             data.callback(null, data.data);

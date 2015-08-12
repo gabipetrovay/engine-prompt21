@@ -1,16 +1,18 @@
 {
   "name": "engine-prompt21",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Form module for Engine.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "components": {
-    "scripts": [
-      "client/index.js",
-      "client/prompt21.js",
-      "/libs/jquery.js"
-    ]
+  "composition": {
+    "client": {
+      "module": [
+        "client/index.js",
+        "client/prompt21.js",
+        "/libs/jquery.js"
+      ]
+    }
   },
   "repository": {
     "type": "git",
@@ -18,8 +20,8 @@
   },
   "keywords": [
     "jxengine",
-    "file",
-    "system"
+    "jillix",
+    "service"
   ],
   "author": {
     "name": "jillix",
